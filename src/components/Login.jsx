@@ -1,5 +1,3 @@
-import { Navbar } from "./Navbar";
-
 export function Login() {
   return (
     <div className="bg-gray-700 w-full flex flex-1 items-center justify-center">

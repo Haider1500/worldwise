@@ -3,22 +3,18 @@ import { Logo } from "./Logo";
 
 export function Navbar() {
   return (
-    <div className="flex items-center justify-between bg-gray-700 relative min-h-11 text-white">
+    <nav className="flex items-center justify-between bg-transparent relative p-2 min-h-11 text-white w-full">
       <Logo />
       <Links />
-    </div>
+    </nav>
   );
 }
 
 function Links() {
   return (
-    <ul className="flex mr-6 gap-10 items-center font-bold text-xl">
-      <Link to="/product">
-        <li>PRODUCT</li>
-      </Link>
-      <Link to={"/pricing"}>
-        <li>PRICING</li>
-      </Link>
+    <ul className="flex mr-6 gap-6 items-center font-semibold md:font-bold text-sm sm:text-md">
+      <Link to={"/product"}>PRODUCT</Link>
+      <Link to={"/pricing"}>PRICING</Link>
       <Link to={"/login"}>
         <button className="px-4 py-2 rounded-md bg-green-600 text-black">
           LOG IN

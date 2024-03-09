@@ -5,9 +5,9 @@ const url = "./src/assets/worldwise-bg.jpg";
 
 export function Home() {
   return (
-    <div className="flex flex-col w-full h-full relative text-white bg-gray-900 opacity-80">
+    <div className="flex flex-col w-full h-full relative text-white overflow-auto	 bg-gray-900 opacity-80">
       <Background />
-      {/* <Navbar /> */}
+      <Navbar />
       <Main />
     </div>
   );
@@ -25,7 +25,7 @@ function Background() {
 
 function Main() {
   return (
-    <div className="relative flex flex-col flex-1 self-center items-center justify-center  gap-10 w-3/4 text-4xl">
+    <div className="relative flex flex-col flex-1 self-center items-center justify-center  gap-10 w-3/4 text-2xl">
       <h2>You travel the world.</h2>
       <h2>WorldWise keeps the track of your adventures.</h2>
       <p className="text-2xl text-center">
