@@ -22,9 +22,7 @@ export function CitiesBox() {
           <span className="w-1 h-8 rounded-lg bg-green-600"></span>
           <span>{c.name}</span>
           <span className="">{`(${c.date})`}</span>
-          <button className="border-2 bg-black text-white px-2 rounded-full">
-            x
-          </button>
+          <button className="bg-black text-white px-2 rounded-full">x</button>
         </li>
       ))}
     </ul>

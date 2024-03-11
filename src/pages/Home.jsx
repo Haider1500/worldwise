@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Navbar } from "./Navbar";
+import { Navbar } from "../components/Navbar";
 
 const url = "./src/assets/worldwise-bg.jpg";
 
@@ -34,7 +34,7 @@ function Main() {
         have wondered the world.
       </p>
       <Link to={"/login"}>
-        <button className="bg-green-600 px-6 py-2 rounded-lg text-2xl text-black font-bold">
+        <button className="bg-green-600 px-6 py-2 rounded-lg text-xl text-black font-bold">
           START TRACKING NOW
         </button>
       </Link>

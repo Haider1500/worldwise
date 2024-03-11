@@ -1,5 +1,5 @@
-// import { Map } from "./Map";
-import { SideBar } from "./SideBar";
+import { Map } from "../components/Map";
+import { SideBar } from "../components/SideBar";
 // other 60% is map using the geolocation api can search our own location
 // select the place and include in the list of cities by fetching the name using the external api. when did we go there so a date is fetched for that.
 // a marker is placed on the map for that we can click it and cross it also
@@ -10,7 +10,7 @@ export function AppLayout() {
   return (
     <div className="flex flex-1 text-white">
       <SideBar />
-      {/* <Map /> */}
+      <Map />
     </div>
   );
 }
