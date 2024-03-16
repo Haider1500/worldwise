@@ -1,29 +1,21 @@
-const cityData = [
-  {
-    name: "Lisbon",
-    flag: "",
-    date: "august,2,2021",
-  },
-  {
-    name: "Madrid",
-    flag: "",
-    date: "july,4,2021",
-  },
-];
+import { useContext } from "react";
+import { City } from "./City";
+import { CitiesContext } from "./CitiesContext";
 
 export function CitiesBox() {
+  const [cities, setCities] = useContext(CitiesContext);
+  if (!cities.length) return "Add countries to the list 😆";
+
+  function handleCityDelete(id) {
+    console.log(id);
+    const newCities = cities.filter((city) => city.id !== id);
+    setCities(newCities);
+  }
+
   return (
     <ul className="w-full flex flex-col items-center gap-4 ">
-      {cityData.map((c) => (
-        <li
-          className="w-3/4 h-10 flex items-center justify-between pr-2 rounded-lg bg-gray-500"
-          key={c.name}
-        >
-          <span className="w-1 h-8 rounded-lg bg-green-600"></span>
-          <span>{c.name}</span>
-          <span className="">{`(${c.date})`}</span>
-          <button className="bg-black text-white px-2 rounded-full">x</button>
-        </li>
+      {cities.map((city) => (
+        <City city={city} key={city.id} onDeleteCity={handleCityDelete} />
       ))}
     </ul>
   );

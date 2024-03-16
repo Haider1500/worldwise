@@ -1,7 +1,8 @@
-export function Button({ children, customClass }) {
+export function Button({ children, customClass, onClick }) {
   return (
     <button
-      className={`bg-gray-800 hover:bg-gray-500 p-2 rounded-lg ${customClass}`}
+      className={`p-2 text-sm rounded-md ${customClass}`}
+      onClick={onClick}
     >
       {children}
     </button>

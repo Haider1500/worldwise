@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import { NavLink } from "react-router-dom";
 
 export function AppNav() {
   return (
     <nav className="">
-      <Link to={"cities"}>
-        <Button>CITIES</Button>
-      </Link>
-      <Link to={"countries"}>
-        <Button>COUNTRIES</Button>
-      </Link>
+      <NavLink to={"cities"} className={"p-2 rounded-md bg-gray-600"}>
+        CITIES{" "}
+      </NavLink>
+      <NavLink to={"countries"} className={"p-2 rounded-md bg-gray-600"}>
+        COUNTRIES
+      </NavLink>
     </nav>
   );
 }
