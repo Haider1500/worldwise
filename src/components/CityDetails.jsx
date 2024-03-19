@@ -16,7 +16,7 @@ export function CityDetails() {
     <form className="flex flex-col bg-gray-600 py-4 px-8 w-10/12  rounded-md text-sm gap-2 items-start">
       <h2 className="grey">CITYNAME</h2>
       <p>{city.name}</p>
-      <h2 className="grey">YOU WENT TO X ON</h2>
+      <h2 className="grey">YOU WENT TO {city.name.toUpperCase()} ON</h2>
       <p>{city.date}</p>
       <h2 className="grey">YOUR NOTES</h2>
       <p>{city?.notes}</p>

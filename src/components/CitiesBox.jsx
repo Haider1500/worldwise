@@ -4,9 +4,9 @@ import { CitiesContext } from "./CitiesContext";
 
 export function CitiesBox() {
   const [cities, setCities] = useContext(CitiesContext);
-  if (!cities.length) return "Add countries to the list 😆";
+  if (!cities.length) return "Add cities to the list 😆";
 
-  function handleCityDelete(id) {
+  function handleDeleteCity(id) {
     console.log(id);
     const newCities = cities.filter((city) => city.id !== id);
     setCities(newCities);
@@ -15,7 +15,7 @@ export function CitiesBox() {
   return (
     <ul className="w-full flex flex-col items-center gap-4 ">
       {cities.map((city) => (
-        <City city={city} key={city.id} onDeleteCity={handleCityDelete} />
+        <City city={city} key={city.id} onDeleteCity={handleDeleteCity} />
       ))}
     </ul>
   );

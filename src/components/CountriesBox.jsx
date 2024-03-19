@@ -14,7 +14,7 @@ export function CountriesBox() {
   if (!countries.length) return "Add countries to the list 😆";
 
   return (
-    <ul className="flex flex-wrap gap-3 items-center justify-center">
+    <ul className="flex flex-wrap gap-3 items-center justify-center ">
       {countries.map((country) => (
         <Country country={country} key={country} />
       ))}

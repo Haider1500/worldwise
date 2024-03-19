@@ -5,7 +5,7 @@ import { AppNav } from "./AppNav";
 
 export function SideBar() {
   return (
-    <div className="bg-gray-700 flex flex-1 flex-col items-center w-6/12 sm:w-4/12 gap-4 relative">
+    <div className="bg-gray-700 flex flex-1 flex-col items-center w-6/12 sm:w-4/12 gap-8 py-5 relative">
       <Logo />
       <AppNav />
       <Outlet />
