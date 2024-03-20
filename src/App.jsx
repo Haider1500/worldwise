@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import { Home } from "./pages/Home";
 import { Product } from "./pages/Product";
@@ -79,8 +79,8 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="login" element={<Login />} />
           <Route path="app" element={<AppLayout />}>
-            <Route index path="cities" element={<CitiesBox />} />
-            <Route index element={<CitiesBox />} />
+            <Route index element={<Navigate replace to={"cities"} />} />
+            <Route path="cities" element={<CitiesBox />} />
             <Route path="cities/:id" element={<CityDetails />} />
             <Route path="countries" element={<CountriesBox />} />
             <Route path="form" element={<Form />} />
