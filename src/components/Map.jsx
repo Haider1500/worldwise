@@ -1,14 +1,14 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
-const position = [20, 60];
+const position = [40, 0];
 
 export function Map() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
-    <div className="flex flex-1 text-black" onClick={() => navigate("form")}>
+    <div className="flex flex-1 text-black relative">
       <MapContainer
-        className="h-96"
+        className="h-full w-full"
         center={position}
         zoom={13}
         scrollWheelZoom={false}
@@ -18,6 +18,7 @@ export function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
+          ``
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
