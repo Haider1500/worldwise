@@ -1,6 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
-const position = [40, 0];
+const position = [20, 60];
 
 export function Map() {
   // const navigate = useNavigate();
