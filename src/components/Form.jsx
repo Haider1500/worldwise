@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { CitiesContext } from "./CitiesContext";
-import { useContext, useState } from "react";
+import { useCities } from "./CitiesContext";
+import { useState } from "react";
 
 import { Button } from "./Button";
 
@@ -12,7 +12,7 @@ const khushab = {
   long: 56,
 };
 export function Form({ city = khushab }) {
-  const [cities, setCities] = useContext(CitiesContext);
+  const [cities, setCities] = useCities();
   const navigate = useNavigate();
 
   const [notes, setNotes] = useState();

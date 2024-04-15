@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { Country } from "./Country";
-import { CitiesContext } from "./CitiesContext";
+import { useCities } from "./CitiesContext";
 
 export function CountriesBox() {
-  const [cities] = useContext(CitiesContext);
+  const [cities] = useCities();
   const countries = cities.reduce((arr, city) => {
     if (arr.includes(city.country)) return arr;
     else {

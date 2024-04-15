@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Button } from "./Button";
-import { useContext } from "react";
-import { CitiesContext } from "./CitiesContext";
+
+import { useCities } from "./CitiesContext";
 
 export function CityDetails() {
   const navigate = useNavigate();
-  const [cities] = useContext(CitiesContext);
+  const [cities] = useCities();
   // const [, setSearchParams] = useSearchParams();
   let { id } = useParams();
 

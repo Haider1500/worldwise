@@ -12,7 +12,7 @@ export function Pricing() {
 
 function Main() {
   return (
-    <div className="flex flex-1 justify-center items-center gap-4 sm:gap-10 mb-10">
+    <main className="flex flex-1 justify-center items-center gap-4 sm:gap-10 mb-10">
       <div className="flex flex-col text-white gap-6 items-center w-4/12">
         <span>
           <h2 className="font-bold text-2xl">Simple Pricing.</h2>
@@ -34,6 +34,6 @@ function Main() {
         alt=""
         className="object-contain w-5/12 sm:w-5/12"
       />
-    </div>
+    </main>
   );
 }

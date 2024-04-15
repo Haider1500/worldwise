@@ -1,6 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
-const position = [20, 60];
+const position = [20, 80];
 
 export function Map() {
   // const navigate = useNavigate();
@@ -18,7 +18,6 @@ export function Map() {
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
-          ``
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>

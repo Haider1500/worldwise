@@ -25,7 +25,7 @@ function Background() {
 
 function Main() {
   return (
-    <div className="relative flex flex-col flex-1 self-center items-center justify-center  gap-10 w-3/4 text-2xl">
+    <main className="relative flex flex-col flex-1 self-center items-center justify-center  gap-10 w-3/4 text-2xl">
       <h2>You travel the world.</h2>
       <h2>WorldWise keeps the track of your adventures.</h2>
       <p className="text-2xl text-center">
@@ -38,6 +38,6 @@ function Main() {
           START TRACKING NOW
         </button>
       </Link>
-    </div>
+    </main>
   );
 }

@@ -1,0 +1,49 @@
+{
+  "citiesData": [
+    {
+      "name": "Lisbon",
+      "flag": "",
+      "country": "Portugal",
+      "date": "August,2,2021",
+      "lat": 19,
+      "long": 56,
+      "id": 12345
+    },
+    {
+      "name": "Madrid",
+      "flag": "",
+      "country": "Spain",
+      "date": "July,4,2021",
+      "lat": 56,
+      "long": 23,
+      "id": 12346
+    },
+    {
+      "name": "Lahore",
+      "flag": "",
+      "country": "Pakistan",
+      "date": "Dec,4,2021",
+      "lat": 10,
+      "long": 80,
+      "id": 12347
+    },
+    {
+      "name": "Barcelona",
+      "flag": "",
+      "country": "Spain",
+      "date": "Feb,4,2021",
+      "lat": 41,
+      "long": 64,
+      "id": 12348
+    },
+    {
+      "name": "Karachi",
+      "flag": "",
+      "country": "Pakistan",
+      "date": "Mar,4,2021",
+      "lat": 35,
+      "long": 69,
+      "id": 12349
+    }
+  ]
+}

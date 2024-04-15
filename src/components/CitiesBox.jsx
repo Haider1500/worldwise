@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { City } from "./City";
-import { CitiesContext } from "./CitiesContext";
+import { useCities } from "./CitiesContext";
 
 export function CitiesBox() {
-  const [cities, setCities] = useContext(CitiesContext);
+  const [cities, setCities] = useCities();
   if (!cities.length) return "Add cities to the list 😆";
 
   function handleDeleteCity(id) {
